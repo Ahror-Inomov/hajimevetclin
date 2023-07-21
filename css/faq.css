@@ -262,13 +262,14 @@ img {
 .site-main {
    flex-grow: 1;
 }
-.site-footer {
-   padding-top: 52px;
-   border: 1px solid #ebebeb;
-   background-color: #f3f3f3;
+.hero {
+   background-image: url(../images/kitten.png), url(../images/rosy.png);
+   background-repeat: no-repeat;
+   background-size: 569px 466px, 654px 652px;
+   background-position: calc(50% + 510px) calc(50% - 440px), calc(50% + 415px) calc(50% + 360px);
 }
 .hero-wrapper {
-   padding: 66px 0 0 112px;
+   padding: 111px 0 0 112px;
 }
 .hero-info {
    width: 447px;
@@ -328,6 +329,147 @@ img {
    border-radius: 5px;
    border: 1px solid #f3f3f3;
    background-color: #fff;
+}
+.hero-item:not(:last-child) {
+   margin-bottom: 18px;
+}
+.hero-item:nth-child(1)  {
+   padding: 26px 112px 75px 63px;
+}
+.hero-item:nth-child(2)  {
+   padding: 23px 150px 32px 63px;
+}
+.hero-item:nth-child(3)  {
+   padding: 23px 150px 32px 63px;
+   opacity: 0.6;
+}
+.hero-item:nth-child(4)  {
+   padding: 26px 112px 44px 63px;
+}
+.hero-item:nth-child(5)  {
+   padding: 26px 112px 44px 63px;
+}
+.hero-item:nth-child(6)  {
+   opacity: 0.6;
+   padding: 26px 112px 44px 63px;
+}
+.hero-item-time {
+   display: inline-flex;
+   margin-right: 28px;
+   font-size: 14px;
+   line-height: 22px;
+   color: #333;
+   vertical-align: middle;
+}
+.hero-item-time::before {
+   display: inline-block;
+   width: 23px;
+   height: 20px;
+   margin-right: 7px;
+   background-image: url(../images/petten.svg);
+   background-repeat: no-repeat;
+   background-size: 27px 25px;
+   background-position: center;
+   content: "";
+}
+.hero-item-link {
+   font-size: 12px;
+   font-weight: 500;
+   line-height: 22px;
+   letter-spacing: 1px;
+   text-transform: uppercase;
+   text-decoration-line: none;
+   color: #78c0de;
+}
+.hero-item-title {
+   position: relative;
+   font-size: 20px;
+   font-weight: 500;
+   line-height: 22px; 
+   margin: 9px 0 0;
+   color: #333;
+}
+.hero-item-title::after {
+   position: absolute;
+   right: -55px;
+   width: 16px;
+   height: 9px;
+   background-image: url(../images/up.svg);
+   background-repeat: no-repeat;
+   background-size: 16px 9px;
+   background-position: center;
+   content: "";
+}
+.hero-item:nth-child(2) .hero-item-time::before {
+    background-image: url(../images/bluepet.svg);
+}
+.hero-item:nth-child(2) .hero-item-title::after {
+   position: absolute;
+   top: 6px;
+   right: -93px;
+   width: 16px;
+   height: 9px;
+   background-image: url(../images/down.svg);
+   content: "";
+}
+.hero-item:nth-child(3) .hero-item-time::before {
+   background-image: url(../images/petten.svg);
+}
+.hero-item:nth-child(3) .hero-item-title::after {
+  position: absolute;
+  top: 6px;
+  right: -93px;
+  width: 21px;
+  height: 21px;
+  background-image: url(../images/clock.svg);
+  background-size: 21px 21px;
+  content: "";
+}
+.hero-item:nth-child(4) .hero-item-time::before {
+   background-image: url(../images/bluepet.svg);
+}
+.hero-item:nth-child(4) .hero-item-title::after {
+  position: absolute;
+  right: -55px;
+  width: 16px;
+  height: 9px;
+  background-image: url(../images/up.svg);
+  background-size: 16px 9px;
+  content: "";
+}
+.hero-item:nth-child(5) .hero-item-time::before {
+   background-image: url(../images/petten.svg);
+}
+.hero-item:nth-child(5) .hero-item-title::after {
+  position: absolute;
+  right: -55px;
+  width: 16px;
+  height: 9px;
+  background-image: url(../images/down.svg);
+  background-size: 16px 9px;
+  content: "";
+}
+.hero-item:nth-child(6) .hero-item-time::before {
+   background-image: url(../images/bluepet.svg);
+}
+.hero-item:nth-child(6) .hero-item-title::after {
+  position: absolute;
+  right: -55px;
+  width: 21px;
+  height: 21px;
+  background-image: url(../images/clock.svg);
+  background-size: 21px 21px;
+  content: "";
+}
+.hero-item-text {
+   line-height: 20px;
+   margin: 23px 0 0; 
+   color: #949494;
+}
+.site-footer {
+   padding-top: 52px;
+   border: 1px solid #ebebeb;
+   background-color: #f3f3f3;
 }
 .footer-wrapper {
    display: flex;
